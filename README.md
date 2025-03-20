@@ -80,7 +80,7 @@ Choosing the right distance metric is crucial for effective clustering.
 How to Run the Code
 Clone the repository:
 
-git clone https://github.com/MachineLearning/kmeans-distance-metrics.git
+git clone - https://github.com/SaiVaraPrasadL/MachineLearning
 cd kmeans-distance-metrics
 
 Install dependencies:
