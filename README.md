@@ -16,6 +16,8 @@ Cluster Visualization
 Conclusion
 How to Run the Code
 Requirements
+
+
 Introduction
 
 An unsupervised machine learning method called clustering puts data into groups according to commonalities.  The choice of distance measure, which affects how data points are classified, has a significant impact on how successful clustering is.  The following metrics are most frequently used in k-Means clustering:
@@ -24,7 +26,7 @@ Manhattan Distance: Measures absolute differences but struggles with diagonal cl
 Cosine Similarity: Evaluates vector direction rather than magnitude, making it suitable for high-dimensional text data.
 This study compares these three metrics to determine which produces the best clustering results for customer segmentation.
 
-Methodology
+Methodology:
 
 Dataset Selection & Preprocessing
 Dataset: Mall Customer Segmentation Dataset
@@ -39,17 +41,17 @@ Spending Score: Measure of spending behavior
 Preprocessing:
 Standardized data using StandardScaler to maintain zero mean and unit variance.
 
-Choosing the Optimal Number of Clusters
+Choosing the Optimal Number of Clusters:
 Elbow Method: Determines optimal k by finding the "elbow point" in the Within-Cluster Sum of Squares (WCSS) plot.
 Silhouette Score: Measures how well data points fit into clusters. Higher scores indicate better clustering.
 
-K-Means with Different Distance Metrics
+K-Means with Different Distance Metrics:
 Euclidean Distance: Standard k-Means metric, assumes compact and spherical clusters.
 Manhattan Distance: Measures distances along axes, reducing sensitivity to outliers.
 Cosine Similarity: Measures angular distance, better suited for text and sparse data.
 
-Results and Analysis
-Elbow Method Results
+Results and Analysis:
+Elbow Method Results:
 
 Euclidean Distance: Optimal k = 5
 Manhattan Distance: Optimal k = 5
@@ -64,11 +66,11 @@ Euclidean Distance	5	0.1639	Best clustering performance
 Manhattan Distance	5	0.1639	Similar performance to Euclidean
 Cosine Distance	2	0.6742	Poor clustering due to high MSE
 
-Cluster Visualization
+Cluster Visualization:
 Euclidean & Manhattan Distance: Created five distinct clusters, effectively segmenting customers.
 Cosine Similarity: Formed only two large clusters, failing to differentiate spending behaviors.
 
-Conclusion
+Conclusion:
 This study demonstrates that Euclidean and Manhattan distances produce the best k-Means clustering results for customer segmentation, achieving the lowest MSE (0.1639) and forming five well-defined clusters. Cosine similarity performed poorly (MSE = 0.6742), making it unsuitable for numerical datasets.
 
 Key takeaways:
@@ -77,18 +79,18 @@ Euclidean & Manhattan distances are best for customer segmentation.
 Cosine similarity is better suited for high-dimensional text data.
 Choosing the right distance metric is crucial for effective clustering.
 
-How to Run the Code
+How to Run the Code:
 Clone the repository:
 
 git clone - https://github.com/SaiVaraPrasadL/MachineLearning
-cd kmeans-distance-metrics
+cd MachineLearning
 
 Install dependencies:
 pip install -r requirements.txt
 Run the clustering script:
 python kmeans_clustering.py
 
-Requirements
+Requirements:
 Python 3.x
 NumPy
 Pandas
@@ -96,5 +98,5 @@ Scikit-learn
 Matplotlib
 Seaborn
 
-Acknowledgments
+Acknowledgments:
 This project is based on customer segmentation using k-Means clustering and explores how different distance metrics impact clustering performance.
